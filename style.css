@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: black;
+    margin-bottom: 40px;
+    background-color: #F9F7F6;
+    
+        
+}
+
+
+/*para colcoar o navbar à esquerda e o main à dieitas, devemos definir o navbar como posição fica, que ele fica à esquerda e depois no main, temos de dar uma margem superior ao tamanho minimo da navbar, neste caso 300px*/
+
+#navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #548DEB;
+    
+    
+  }
+#navbar h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+#navbar li {    
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    border-bottom: solid 1px;
+    border-color: white;
+    width: 100%;
+    padding-left: 20px;
+    
+    
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+}
+
+#main-doc {
+    margin-left: 320px;
+    padding:0 10px;
+}
+
+#main-doc header {
+    font-size: 2rem;
+    line-height: 3;
+}
+
+#main-doc li {
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+       position:absolute;
+       margin-top: 0;
+       padding-top: 0;
+       height: fit-content;
+       width: 100%;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        padding-top: 420px;
+    }
+}
