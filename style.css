@@ -70,6 +70,15 @@ body {
     margin-left: 30px;
 }
 
+code {
+    background-color: #f3f1eb;
+    display: block;
+    text-align: left;
+   justify-content: center;
+ 
+    
+}
+
 @media (max-width: 768px) {
     #navbar {
        position:absolute;
